@@ -1,0 +1,68 @@
+# Finding the outliers in the dataset using the box plots
+plt.figure(figsize = (15, 10))
+
+plt.subplot(4, 4, 1)
+sns.boxplot(data = df_num['cons_12m'], orient = 'h')
+plt.title('cons_12m')
+
+plt.subplot(4, 4, 2)
+sns.boxplot(data = df_num['cons_gas_12m'], orient = 'h')
+plt.title('cons_gas_12m')
+
+plt.subplot(4, 4, 3)
+sns.boxplot(data = df_num['cons_last_month'], orient = 'h')
+plt.title('cons_last_month')
+
+plt.subplot(4, 4, 4)
+sns.boxplot(data = df_num['forecast_cons_12m'], orient = 'h')
+plt.title('forecast_cons_12m')
+
+plt.subplot(4, 4, 5)
+sns.boxplot(data = df_num['forecast_cons_year'], orient = 'h')
+plt.title('forecast_cons_year')
+
+plt.subplot(4, 4, 6)
+sns.boxplot(data = df_num['forecast_meter_rent_12m'], orient = 'h')
+plt.title('forecast_meter_rent_12m')
+
+plt.subplot(4, 4, 7)
+sns.boxplot(data = df_num['imp_cons'], orient = 'h')
+plt.title('imp_cons')
+
+plt.subplot(4, 4, 8)
+sns.boxplot(data = df_num['margin_gross_pow_ele'], orient = 'h')
+plt.title('margin_gross_pow_ele')
+
+plt.subplot(4, 4, 9)
+sns.boxplot(data = df_num['margin_net_pow_ele'], orient = 'h')
+plt.title('margin_net_pow_ele')
+
+plt.subplot(4, 4, 10)
+sns.boxplot(data = df_num['forecast_discount_energy'], orient = 'h')
+plt.title('forecast_discount_energy')
+
+plt.subplot(4, 4, 11)
+sns.boxplot(data = df_num['forecast_price_energy_off_peak'], orient = 'h')
+plt.title('forecast_price_energy_off_peak')
+
+plt.subplot(4, 4, 12)
+sns.boxplot(data = df_num['forecast_price_energy_peak'], orient = 'h')
+plt.title('forecast_price_energy_peak')
+
+plt.subplot(4, 4, 13)
+sns.boxplot(data = df_num['forecast_price_pow_off_peak'], orient = 'h')
+plt.title('forecast_price_pow_off_peak')
+
+plt.subplot(4, 4, 14)
+sns.boxplot(data = df_num['forecast_price_pow_peak'], orient = 'h')
+plt.title('forecast_price_pow_peak')
+
+plt.subplot(4, 4, 15)
+sns.boxplot(data = df_num['nb_prod_act'], orient = 'h')
+plt.title('nb_prod_act')
+
+plt.subplot(4, 4, 16)
+sns.boxplot(data = df_num['net_margin'], orient = 'h')
+plt.title('net_margin')
+
+plt.show()
